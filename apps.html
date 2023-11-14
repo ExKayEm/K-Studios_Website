@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>K-Studios - Applications</title>
+<link rel="icon" type="image/x-icon" href="/K-Studios_Website/favicon.ico">
 <style>
     ul {
         list-style-type: none;
@@ -42,7 +43,55 @@
                 background-repeat: no-repeat;
                 background-attachment: fixed;
             }
+
+      footer {
+        padding: 10px;
+        background-color: #212121;
+        color: white;
+        text-align: center;
+        font-family: 'Audiowide', sans-serif;
+      }
+        
+      #apps th {
+        background-color: #04AA6D;
+        color: white;
+        border: 4px solid #212121;
+        font-family: 'Audiowide' sans-serif;
+      }
+
+      #apps td {
+        background-color: #212121;
+        color: white;
+        border: 4px solid #04AA6D;
+      }
+
+      #but1 {
+        transition-duration: 4s;
+        border: 4px solid #04AA6D;
+        border-radius: 12px;
+        background-color: white;
+        color: black;
+      }
+
+      #but1:hover {
+        background-color: #04AA6D;
+        color: white;
+      }
+
+      #but2 {
+        transition-duration: 4s;
+        border: 4px solid #04AA6D;
+        border-radius: 12px;
+        background-color: white;
+        color: black;
+      }
+
+      #but2:hover {
+        background-color: #04AA6D;
+        color: white;
+      }
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 <body>
     <ul>
@@ -51,5 +100,30 @@
         <li><a href="/K-Studios_Website/contact">Contact Us</a></li>
         <li style="float:right"><a href="/K-Studios_Website/about">About K-Studios</a></li>
     </ul>
+
+    <h1>K-Studios Applications</h1><br>
+
+    <table id="apps">
+      <tr>
+        <th>Application's Name</th>
+        <th>Application's Version</th>
+        <th>Link to the Applications</th>
+      </tr>
+      <tr>
+        <td>K-Pay</td>
+        <td>1.0 (Alpha)</td>
+        <td><button id="but1" href="https://www.mediafire.com/file/3tg3i52nioapkms/KPay.apk/file">Download K-Pay</button></td>
+      </tr>
+      <tr>
+        <td>AuthBackup Codes</td>
+        <td>1.0</td>
+        <td><button id="but2" href="https://www.mediafire.com/file/7g3rd82kw3a00rp/AuthBackup_Codes.apk/file">Download AuthBackup Codes</button></td>
+      </tr>
+    </table>
+
+    <footer>
+      <p>K-Studios® - All rights reserved!</p>
+      <p>2019 - 2023</p>
+    </footer>
 </body>
 </html>
