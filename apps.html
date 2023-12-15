@@ -62,14 +62,14 @@
       #apps th {
         background-color: #04AA6D;
         color: white;
-        border: 1px solid #212121;
+        border: 5px solid #212121;
         height: 50px;
       }
 
       #apps td {
         background-color: #212121;
         color: white;
-        border: 1px solid #04AA6D;
+        border: 5px solid white;
         transition-duration: 0.4s;
         height: 100px;
       }
@@ -78,34 +78,9 @@
         background-color: #444444;
       }
 
-      #but1 {
-        transition-duration: 0.4s;
-        border: 1px solid #04AA6D;
-        border-radius: 12px;
-        background-color: white;
-        color: black;
+      #textHeader {
         font-family: 'Audiowide' sans-serif;
-      }
-
-      #but1:hover {
-        background-color: #04AA6D;
-        color: white;
-        font-family: 'Audiowide' sans-serif;
-      }
-
-      #but2 {
-        transition-duration: 0.4s;
-        border: 1px solid #04AA6D;
-        border-radius: 12px;
-        background-color: white;
-        color: black;
-        font-family: 'Audiowide' sans-serif;
-      }
-
-      #but2:hover {
-        background-color: #04AA6D;
-        color: white;
-        font-family: 'Audiowide' sans-serif;
+        size: 50px;
       }
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
@@ -118,7 +93,7 @@
         <li style="float:right"><a href="/K-Studios_Website/about">About K-Studios</a></li>
     </ul>
 
-    <h1 align="center">K-Studios Applications</h1><br>
+    <h1 id="textHeader" align="center">K-Studios Applications</h1><br>
 
     <table id="apps">
       <tr>
@@ -129,12 +104,12 @@
       <tr>
         <td>K-Pay</td>
         <td>1.0 (Alpha)</td>
-        <td><p id="but1" href="https://www.mediafire.com/file/3tg3i52nioapkms/KPay.apk/file">Download K-Pay</p></td>
+        <td><a href="https://www.mediafire.com/file/3tg3i52nioapkms/KPay.apk/file">Download</a></td>
       </tr>
       <tr>
         <td>AuthBackup Codes</td>
         <td>1.0</td>
-        <td><p id="but2" href="https://www.mediafire.com/file/7g3rd82kw3a00rp/AuthBackup_Codes.apk/file">Download AuthBackup Codes</p></td>
+        <td><a href="https://www.mediafire.com/file/7g3rd82kw3a00rp/AuthBackup_Codes.apk/file">Download</a></td>
       </tr>
     </table>
 
