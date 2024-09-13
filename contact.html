@@ -24,6 +24,7 @@
       li a {
         display: block;
         color: white;
+        font-family: verdana;
         text-align: center;
         padding: 16px 16px;
         text-decoration: none;
@@ -44,15 +45,39 @@
                 background-attachment: fixed;
             }
 
+      #table123 {
+        font-family: verdana;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      #table123 th {
+        background-color: #292929;
+        color: #868786;
+      }
+
+      #table123 td {
+        background-color: #444444;
+        color: #A9A8A8;
+        transition-duration: 0.4s;
+      }
+
+      #table123 td:hover {background-color: #09477F;}
+
+      #header1 {
+        font-family: verdana;
+        text-align: center;
+      }
+
       footer {
         color: white;
-        font-family: 'Audiowide', sans-serif;
+        font-family: verdana;
         padding: 10px;
         background-color: #212121;
         text-align: center;
       }
 </style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 <body>
     <ul>
@@ -62,9 +87,24 @@
         <li style="float:right"><a href="https://exkayem.github.io/K-Studios_Website/about">About K-Studios</a></li>
     </ul>
 
-    <p align="center">Soon-to-be available...</p>
-    <p align="center">New contact options are about to come!</p>
+    <h1 id="header1">Available Contact Options</h1>
 
+    <table id="table123">
+      <tr>
+        <th>Available Options</th>
+        <th>Information</th>
+      </tr>
+      <tr>
+        <td>Email Address</td>
+        <td>kacerdc31@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Discord</td>
+        <td>exkayem_pl#0</td>
+      </tr>
+    </table>
+    <br>
+    <br>
     <footer>
       <p>K-Studios® - All rights reserved!</p>
       <p>2019 - 2024</p>
