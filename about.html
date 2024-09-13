@@ -44,29 +44,11 @@
                 background-attachment: fixed;
             }
 
-body, html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.table_container1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.table_container2 {
-  display: flex;
-  flex-direction: column;
-}
-
 #customers {
   width: 50%;
   text-align: center;
   font-family: verdana;
-  object-position: center;
+  margin: 0 auto;
 }
 
 #customers td:hover {background-color: #09477F;}
@@ -85,6 +67,7 @@ body, html {
   width: 50%;
   text-align: center;
   font-family: verdana;
+  margin: 0 auto;
 }
 
 #information th {
@@ -122,7 +105,7 @@ footer {
 
     <h1 align="center" style="font-family:verdana;">About K-Studios Members</h1>
     
-  <div class="table_container1">
+  <div>
     <table id="customers">
       <tr>
         <th>Team Member</th>
@@ -165,7 +148,7 @@ footer {
     <br>
     <br>
     <h1 align="center" style="font-family:verdana;">About K-Studios</h1>
-  <div class="table_container2">
+  <div>
     <table id="information">
       <tr>
        <th>Studio Name</th>
