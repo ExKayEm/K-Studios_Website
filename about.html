@@ -43,6 +43,23 @@
                 background-repeat: no-repeat;
                 background-attachment: fixed;
             }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table_container1 {
+  display: flex;
+}
+
+.table_container2 {
+  display: flex;
+}
+
 #customers {
   width: 50%;
   text-align: center;
@@ -103,79 +120,83 @@ footer {
 
     <h1 align="center" style="font-family:verdana;">About K-Studios Members</h1>
     
-  <table id="customers">
-    <tr>
-      <th>Team Member</th>
-      <th>Working in K-Studios since</th>
-      <th>Role</th>
-    </tr>
-    <tr>
-      <td>ExKayEm_PL</td>
-      <td>Beginning</td>
-      <td>Founder</td>
-    </tr>
-    <tr>
-      <td>MarcPL</td>
-      <td>Beginning</td>
-      <td>Co-Founder</td>
-   </tr>
-   <tr>
-      <td>AmyTheGoddess</td>
-       <td>Beginning</td>
-      <td>Chief of STAFF</td>
-    </tr>
-    <tr>
-      <td>ZenekBezSpodenekXD</td>
-      <td>12.01.2021</td>
-      <td>STAFF</td>
-    </tr>
-    <tr>
-      <td>Maxim</td>
-      <td>05.02.2021</td>
-      <td>STAFF</td>
-    </tr>
-    <tr>
-      <td>HayoD21</td>
-      <td>25.02.2021</td>
-      <td>STAFF</td>
-    </tr>
-  </table>
+  <div class="table_container1">
+    <table id="customers">
+      <tr>
+        <th>Team Member</th>
+        <th>Working in K-Studios since</th>
+        <th>Role</th>
+      </tr>
+      <tr>
+        <td>ExKayEm_PL</td>
+        <td>Beginning</td>
+        <td>Founder</td>
+      </tr>
+      <tr>
+        <td>MarcPL</td>
+        <td>Beginning</td>
+        <td>Co-Founder</td>
+      </tr>
+      <tr>
+        <td>AmyTheGoddess</td>
+        <td>Beginning</td>
+       <td>Chief of STAFF</td>
+      </tr>
+      <tr>
+       <td>ZenekBezSpodenekXD</td>
+       <td>12.01.2021</td>
+       <td>STAFF</td>
+      </tr>
+      <tr>
+       <td>Maxim</td>
+       <td>05.02.2021</td>
+       <td>STAFF</td>
+      </tr>
+      <tr>
+       <td>HayoD21</td>
+       <td>25.02.2021</td>
+       <td>STAFF</td>
+      </tr>
+    </table>
+  </div>
     <br>
     <br>
     <br>
     <h1 align="center" style="font-family:verdana;">About K-Studios</h1>
-  <table id="information">
-    <tr>
-      <th>Studio Name</th>
-      <th>Since when</th>
-      <th>Until when</th>
-      <th>History</th>
-    </tr>
-    <tr>
-      <td>FIGHTZONE®</td>
-      <td>Early 2019</td>
-      <td>Early 2020</td>
-      <td>Firstly K-Studios was named FIGHTZONE® and we were mainly creating and developing games on the Roblox platform. We were a bit popular since our start and we have been a trusted Studio. Sadly our Studio has been announced for discontinuation in the early 2020.</td>
-    </tr>
-    <tr>
-      <td>GreenZone®</td>
-      <td>Februar 2020</td>
-      <td>April 2020</td>
-      <td>Afterwards our Studio has been replaced with the name GreenZone® and a totally new HR Team but we had the same people in lower positions. We were continuing the games on the Roblox platform but we also created our own Minecraft servers. To not lie we were more motivated on Minecraft than Roblox. Sadly shortly afterwards, in April, we were abandoned by the most important persons in our HR Team leading to another discontinuation.</td>
-    </tr>
-    <tr>
-      <td>Earl Raid Studios®</td>
-      <td>June 2020</td>
-      <td>Late December 2021</td>
-      <td>As Earl Raid StudiosⓇ we have been functioning from June 2020 until late December 2021. Earl Raid Studios® had the best HR Team and Developers in our whole past history, we were not only continuing some of the GreenZone® Roblox projects and making our own Minecraft server but we also made simple apps and games for Android devices. Our HR Team and our other Teams were really stable in Earl Raid Studios®. As said in late December 2021 Earl Raid Studios® stopped existing, not because of the lack of resources or workers but because we changed the name of our Studio.</td>
-    </tr>
-    <tr>
-      <td>K-Studios®</td>
-      <td>Late December 2021</td>
-      <td>-</td>
-      <td>Late December 2021 we named our Studio K-Studios and continued on making both Roblox & Minecraft servers and simple apps and games for Android devices. Late December 2022 we discontinued the managing process of any Roblox and Minecraft servers but in return we got way better in development of apps and games for Android devices and also we started making some simple *.bat and *.vbs projects for Windows devices (PCs). And this studio lives till now, till today!</td>
-    </tr>
-  </table>
+  <div class="table_container2">
+    <table id="information">
+      <tr>
+       <th>Studio Name</th>
+       <th>Since when</th>
+       <th>Until when</th>
+       <th>History</th>
+      </tr>
+      <tr>
+       <td>FIGHTZONE®</td>
+       <td>Early 2019</td>
+       <td>Early 2020</td>
+       <td>Firstly K-Studios was named FIGHTZONE® and we were mainly creating and developing games on the Roblox platform. We were a bit popular since our start and we have been a trusted Studio. Sadly our Studio has been announced for discontinuation in the early 2020.</td>
+      </tr>
+      <tr>
+       <td>GreenZone®</td>
+       <td>Februar 2020</td>
+       <td>April 2020</td>
+       <td>Afterwards our Studio has been replaced with the name GreenZone® and a totally new HR Team but we had the same people in lower positions. We were continuing the games on the Roblox platform but we also created our own Minecraft servers. To not lie we were more motivated on Minecraft than Roblox. Sadly shortly afterwards, in April, we were abandoned by the most important persons in our HR Team leading to another discontinuation.</td>
+      </tr>
+      <tr>
+        <td>Earl Raid Studios®</td>
+        <td>June 2020</td>
+        <td>Late December 2021</td>
+        <td>As Earl Raid StudiosⓇ we have been functioning from June 2020 until late December 2021. Earl Raid Studios® had the best HR Team and Developers in our whole past history, we were not only continuing some of the GreenZone® Roblox projects and making our own Minecraft server but we also made simple apps and games for Android devices. Our HR Team and our other Teams were really stable in Earl Raid Studios®. As said in late December 2021 Earl Raid Studios® stopped existing, not because of the lack of resources or workers but because we changed the name of our Studio.</td>
+      </tr>
+      <tr>
+        <td>K-Studios®</td>
+       <td>Late December 2021</td>
+       <td>-</td>
+       <td>Late December 2021 we named our Studio K-Studios and continued on making both Roblox & Minecraft servers and simple apps and games for Android devices. Late December 2022 we discontinued the managing process of any Roblox and Minecraft servers but in return we got way better in development of apps and games for Android devices and also we started making some simple *.bat and *.vbs projects for Windows devices (PCs). And this studio lives till now, till today!</td>
+      </tr>
+    </table>
+  </div>
   <footer>
     <p>K-Studios® - All rights reserved!</p>
     <p>2019 - 2024</p>
