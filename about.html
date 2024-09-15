@@ -191,6 +191,8 @@ footer {
     <p>2019 - 2024</p>
   </footer>
 
+    <p id="user-data">Loading data...</p>
+
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
@@ -214,7 +216,23 @@ footer {
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+
+    // Reference to the users/ path in your Firebase Realtime Database
+        const dbRef = firebase.database().ref('users/');
+
+        // Read data from the users/ path
+        dbRef.on('value', (snapshot) => {
+            // Get the data as a JavaScript object
+            const data = snapshot.val();
+
+            // Convert the data to a string (e.g., JSON.stringify if it's an object)
+            const userData = JSON.stringify(data, null, 2);
+
+            // Set the text content of the <p> element
+            document.getElementById('user-data').textContent = userData;
+        });
 </script>
+
     
 </body>
 </html>
