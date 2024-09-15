@@ -189,50 +189,6 @@ footer {
   <footer>
     <p>K-Studios® - All rights reserved!</p>
     <p>2019 - 2024</p>
-  </footer>
-
-    <p id="user-data">Loading data...</p>
-
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyC6HedxO1wiD4rf3OmARwCmUHdOS0KK3TU",
-    authDomain: "kacper-studios-6d72d.firebaseapp.com",
-    databaseURL: "https://kacper-studios-6d72d-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "kacper-studios-6d72d",
-    storageBucket: "kacper-studios-6d72d.appspot.com",
-    messagingSenderId: "889704157275",
-    appId: "1:889704157275:web:8a1f171814e1a22a046f7e",
-    measurementId: "G-BVMM12012N"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-
-    // Reference to the users/ path in your Firebase Realtime Database
-        const dbRef = firebase.database().ref('users/');
-
-        // Read data from the users/ path
-        dbRef.on('value', (snapshot) => {
-            // Get the data as a JavaScript object
-            const data = snapshot.val();
-
-            // Convert the data to a string (e.g., JSON.stringify if it's an object)
-            const userData = JSON.stringify(data, null, 2);
-
-            // Set the text content of the <p> element
-            document.getElementById('user-data').textContent = userData;
-        });
-</script>
-
-    
+  </footer>    
 </body>
 </html>
