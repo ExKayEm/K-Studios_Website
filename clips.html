@@ -47,6 +47,30 @@
 
   #title {
     font-family: verdana;
+    text-align: center;
+  }
+
+  #NewMark {
+    color: red;
+    font-family: verdana;
+    font-style: oblique;
+  }
+
+  #ClipsRow {
+    width: 100%;
+    height: 315px;
+  }
+
+  #ClipsRow div {
+    background-color: #212121;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  #NoneInfo {
+    color: white;
+    font-family: verdana;
+    text-align: center;
   }
 
 footer {
@@ -64,14 +88,24 @@ footer {
     <ul>
         <li><a href="https://exkayem.github.io/K-Studios_Website/">Home</a></li>
         <li><a href="https://exkayem.github.io/K-Studios_Website/apps">Our Applications</a></li>
-        <li><a href="https://exkayem.github.io/K-Studios_Website/contact">Contact Us</a></li>
+        <li><a href="https://exkayem.github.io/K-Studios_Website/contact">Contact Us</a><p id="NewMark">NEW!</p></li>
         <li><a class="active" href="https://exkayem.github.io/K-Studios_Website/clips">Clips</a></li>
         <li style="float:right"><a href="https://exkayem.github.io/K-Studios_Website/about">About K-Studios</a></li>
     </ul>
   <h1 id="title">ExKayEm_PL's Favourite Clips</h1>
   <br>
   <br>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/pq_ZhhgHOUs?si=4_4MKmFyX45vnmZF&amp;clip=Ugkxzfus0L0Gse4HAFIZIPAVuh5RNmT1YCgp&amp;clipt=EJ-0FBiY5xQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div id="ClipsRow">
+    <div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pq_ZhhgHOUs?si=4_4MKmFyX45vnmZF&amp;clip=Ugkxzfus0L0Gse4HAFIZIPAVuh5RNmT1YCgp&amp;clipt=EJ-0FBiY5xQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+      <h1 id="NoneInfo">No Clips yet...</h1>
+    </div>
+    <div>
+      <h1 id="NoneInfo">No Clips yet...</h1>
+    </div>
+  </div>
   <br>
   <br>
   <footer>
